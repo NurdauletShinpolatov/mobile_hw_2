@@ -1,12 +1,9 @@
-@@ -0,0 +1,11 @@
-# widgets_practice
-
 ## Getting Started
 
-Enter the project from terminal and run 'flutter run' command.
+To run my project, you have to open terminal and type 'flutter run' and run it
 
-I will call my created widgets, namely 1. `MyStatelessWidget` StatelessWidget and 2. `MyCounterWidget` StatefulWidget, using the `Column` widget in the body.
+In the body using the `Column` widget both 1. `MessageWidget` StatelessWidget and 2. `CounterStatefulWidget` StatefulWidget are called. This arrangement enables the seamless integration of message display, facilitated by the `MessageWidget`, and dynamic counter functionality provided by the CounterStatefulWidget within the same user interface structure.
 
-The widget 1. `MyStatelessWidget` takes a String type text as a parameter and displays it using the Text widget with a specified style.
+The `MessageWidget`, as the first widget in our project, accepts a text parameter of type String. It utilizes the Text widget to display the provided text with a customized style. This approach allows for dynamic content presentation within the widget, enhancing flexibility and visual appeal.
 
 The widget `MyCounterWidget` is a StatefulWidget that has a counter value and a button. Every time the button is pressed, the `_incrementCounter` function is triggered, incrementing the counter value and calling the `setState` function. The `setState` function rebuilds all the widgets inside the `MyCounterWidget`. Within the `MyCounterWidget`, I also call the 3. `MyThirdContainer` StatelessWidget each time the button is pressed, passing the incremented counter value as a parameter to it and rebuilding it.# mobile_hw_2
